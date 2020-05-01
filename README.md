@@ -4,6 +4,7 @@
 
 # Pre-requisites
 
+* confifure aws credentials using aws configure
 * jq
 * kops
 * kubectl
