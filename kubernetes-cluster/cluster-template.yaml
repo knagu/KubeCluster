@@ -7,6 +7,7 @@ spec:
     loadBalancer:
       type: Public
       additionalSecurityGroups: ["{{.common_http_sg_id.value}}"]
+      crossZoneLoadBalancing: true
   authorization:
     rbac: {}
   channel: stable
