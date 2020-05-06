@@ -1,4 +1,4 @@
-# Deploying Kubernetes clusters with kops and Terraform
+# Deploying Kubernetes clusters in AWS using kops and Terraform
 
 
 
