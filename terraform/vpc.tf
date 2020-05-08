@@ -4,8 +4,8 @@ module "dev_vpc" {
   name               = "${local.vpc_name}"
   cidr               = "10.0.0.0/16"
   azs                = "${local.azs}"
-  private_subnets    = ["10.0.1.0/24"]
-  public_subnets     = ["10.0.101.0/24"]
+  private_subnets    = "${local.private_subnets}"
+  public_subnets     = "${local.public_subnets}"
   enable_nat_gateway = true
 
   tags = {
