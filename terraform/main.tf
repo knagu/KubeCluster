@@ -12,6 +12,8 @@ terraform {
 
 locals {
   azs                    = ["us-west-2a"]
+  private_subnets        = ["10.0.1.0/24"]
+  public_subnets         = ["10.0.101.0/24"]
   environment            = "dev"
   kops_state_bucket_name = "${local.environment}-kops-state-example"
   // Needs to be a FQDN
